@@ -1,2 +1,2 @@
 # Hangman
-Simple Hangman game in Python.
+Simple Hangman game in Python, good for learning.
