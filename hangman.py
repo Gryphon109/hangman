@@ -24,6 +24,7 @@ class Hangman():
                     else:
                         self.guessed_letters.append(guess)
                         break
+                        
 
             found = False
             new_answer = ''
@@ -38,10 +39,12 @@ class Hangman():
                         new_answer += self.found_ans[self.answer.index(ch)]
 
             self.found_ans = new_answer
+            
 
             na = ''
             for c in new_answer:
                 na += '%s '%c
+                
 
             if '_' in new_answer:
                 if found:
@@ -53,6 +56,8 @@ class Hangman():
                 print('Congratulations, you have won the game!\nThe word was {}'.format(new_answer))
                 self.won = True
                 break
+                
+                
 
         if self.won:
             quit()
