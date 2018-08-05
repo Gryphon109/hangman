@@ -67,3 +67,4 @@ class Hangman():
 
 h = Hangman()
 h.run()
+
